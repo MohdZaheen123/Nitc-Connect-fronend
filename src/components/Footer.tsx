@@ -14,7 +14,7 @@ export default function Footer() {
                     <Link href='/signin' className={cn(buttonVariants(), 'my-5')}> Sign In</Link>
                 </div>
                 <div className='text-center h-[15rem] pt-24 text-blue-300'>
-                    <Link href='https://github.com/MohdZaheen123/Nitc-Connect'><img src="/github.svg" alt="" className='invert w-8 mx-auto my-4' /></Link>
+                    <Link href='https://github.com/MohdZaheen123/Nitc-Connect-fronend'><img src="/github.svg" alt="" className='invert w-8 mx-auto my-4' /></Link>
                     <Link href='/products'>Products</Link>|
                     <Link href='/tickets'>Tickets</Link>|
                     <Link href='/about'>About</Link>
