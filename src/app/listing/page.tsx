@@ -74,8 +74,8 @@ export default function page() {
 
 
         return (
-            <div className="max-w-6xl mx-auto">
-                <div>
+            <div className=" mx-auto bg-blue-100 min-h-screen">
+                <div className="max-w-6xl">
                     {data.length != 0 && data?.map((item, i) => (
                         <div key={i} className="bg-blue-300 my-3 rounded-xl p-3 h-fit">
                             <p className="text-xl font-semibold">{item.title}</p>
@@ -83,8 +83,8 @@ export default function page() {
                             <button className='bg-blue-800 hover:bg-blue-900 text-white p-2 rounded-xl' onClick={() => { handledelete(item.category, item._id, item.title, i) }}>Delete</button>
                         </div>
                     ))}
-                    {data.length == 0 && <div><p className='text-center text-xl font-semibold'>No Tickets Listed Yet!!</p></div>}
                 </div>
+                {data.length == 0 && <div className="pt-10"><p className='text-center text-xl font-semibold'>You Have Not Listed Anything Yet!!</p></div>}
             </div>
         )
     } else {

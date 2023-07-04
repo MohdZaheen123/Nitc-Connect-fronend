@@ -54,7 +54,7 @@ export default function page() {
             loader={<h4>Loading...</h4>}
         >
 
-            <div className="bg-blue-50 min-h-screen pt-10 px-2 md:px-10">
+            <div className="bg-blue-100 min-h-screen pt-10 px-2 md:px-10">
 
                 <p className="text-xl font-semibold">Grab your deal now!!</p>
                 <div className="pt-20 flex flex-wrap gap-6 justify-center items-center">
