@@ -23,13 +23,14 @@ export default function CreateItem({ item }) {
                     return true;
                 }),
                 description: yup.string().required("Description is required"),
-                contact: yup.number().required("Contact number is required")
+                contact: yup.string().required("Contact number is required").matches(/^\d{10}$/, 'Contact must be a number with 10 characters')
+                
             });
         } else if (item === 'ticket') {
             schema = yup.object().shape({
                 title: yup.string().required("Title is required"),
                 description: yup.string().required("Description is required"),
-                contact: yup.number().required("Contact number is required")
+                contact: yup.string().required("Contact number is required").matches(/^\d{10}$/, 'Contact must be a number with 10 characters')
             });
         }
 
