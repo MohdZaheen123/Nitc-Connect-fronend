@@ -74,8 +74,8 @@ export default function page() {
 
 
         return (
-            <div className=" mx-auto bg-blue-100 min-h-screen">
-                <div className="max-w-6xl">
+            <div className=" mx-auto bg-blue-100 min-h-screen pt-10">
+                <div className="max-w-6xl mx-auto">
                     {data.length != 0 && data?.map((item, i) => (
                         <div key={i} className="bg-blue-300 my-3 rounded-xl p-3 h-fit">
                             <p className="text-xl font-semibold">{item.title}</p>
