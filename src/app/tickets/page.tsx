@@ -67,7 +67,7 @@ export default function page() {
                             <div className="my-2 px-5 w-full h-full min-h-[5rem] bg-indigo-900 text-white border-black border rounded-xl min-w-[80vw] flex flex-col">
                                 <p className='text-xl font-bold text-center md:text-2xl py-3'>{item.title}</p>
                                 <p>{item.description}</p>
-                                <Link className='bg-blue-300 text-black w-20 text-center font-semibold rounded-xl my-3' href='/'>Contact</Link>
+                                <Link href={`https://wa.me/+91${item.contact}?text=Hi, I would like to enquire about ${item.title} you posted in Nitc connect`} className='bg-blue-300 text-black w-20 text-center font-semibold rounded-xl my-3'>Contact</Link>
                             </div>
                         ))}
                         {tickets.length == 0 && <div><p className='text-center text-xl font-semibold'>No Tickets Listed Yet!!</p></div>}
