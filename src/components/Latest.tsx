@@ -3,11 +3,13 @@ import Link from 'next/link'
 
 export default async function Latest() {
 
-    const d = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products/latestproducts`, {
-        cache: 'no-store'
-    })
+// The below data fetching is used when there is a backend. here for demo purpose we are taking data =[]
+    // const d = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/products/latestproducts`, {
+    //     cache: 'no-store'
+    // })
 
-    const data = await d.json()
+    // const data = await d.json()
+    const data =[];
 
     return (
         <div className="h-full min-h-screen justify-center flex flex-col items-center">
